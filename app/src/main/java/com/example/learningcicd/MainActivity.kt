@@ -12,10 +12,42 @@ class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         binding = ActivityMainBinding.inflate(layoutInflater)
+
+
         setContentView(binding.root)
 
         binding.textView.setOnClickListener {
-            Toast.makeText(this@MainActivity, "Clicked", Toast.LENGTH_SHORT2).show()
+
+
+            Toast.makeText(this@MainActivity, "Clicked", Toast.LENGTH_SHORT).show()
+            performAction(5)
+        }
+        performAction(15)
+    }
+
+    //Some Function
+    private fun performAction(someValue: Int) {
+
+        if (someValue > 10) {
+            if (someValue > 11) {
+                if (someValue > 12) {
+                    if (someValue > 13) {
+                        if (someValue > 14) {
+
+                        } else {
+
+                        }
+                    } else {
+
+                    }
+                } else {
+
+                }
+            } else {
+
+            }
+        } else {
+
         }
     }
 }
